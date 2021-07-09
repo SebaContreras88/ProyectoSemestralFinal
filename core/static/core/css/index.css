@@ -1,0 +1,105 @@
+body{
+    background-image: url("../img/arte1.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.titulo{
+    text-align: center;
+    text-decoration: underline;
+    font-style:initial;
+    font-size: 80px;
+    font-weight:bold;
+}
+
+
+.jumbotron{
+    background-color: #ffa76d;
+
+}
+.nav-item{
+    background-color: #afc221;
+}
+p{
+    font-weight: bold;
+}
+a{
+    color: #000;
+    text-decoration: underline;
+}
+.btn-outline-success{
+    color: #000;
+    background-color: #36bebe;
+    border-color: #000;
+}
+.btn-outline-success:hover{
+    color: #fff;
+    background-color: #227ec9;
+    border-color: #000;
+}
+.btn-outline-success.disabled, .btn-outline-success:disabled{
+    color: #000;
+    background-color: transparent;
+}
+.btn-outline-success:focus, .btn-outline-success.focus{
+    box-shadow: 0 0 0 0.2rem rgba(47, 171, 228, 0.5);
+}
+.btn-outline-success:not(:disabled):not(.disabled):active, .btn-outline-success:not(:disabled):not(.disabled).active,
+.show > .btn-outline-success.dropdown-toggle {
+  color: #fff;
+  background-color: #227ec9;
+  border-color: #227ec9;
+}
+.btn-outline-success:not(:disabled):not(.disabled):active:focus, .btn-outline-success:not(:disabled):not(.disabled).active:focus,
+.show > .btn-outline-success.dropdown-toggle:focus {
+  box-shadow: 0 0 0 0.2rem rgba(47, 171, 228, 0.5);
+}
+.foterpie{
+    background-color: #ffa76d;
+    text-align: center;
+}
+.btn-primary {
+    color: rgb(0, 0, 0);
+    background-color: #ffffff;
+    border-color: #d4d4d0;
+}
+.btn-primary:hover {
+    color: #fff;
+    background-color: #232512;
+    border-color: #232512;
+}
+.btn-primary:focus, .btn-primary.focus {
+    color: #fff;
+    background-color: #232512;
+    border-color: #232512;
+    box-shadow: 0 0 0 0.2rem #232512;
+}
+.btn-primary.disabled, .btn-primary:disabled {
+    color: #fff;
+    background-color: #232512;
+    border-color: #232512;
+}
+.btn-primary:not(:disabled):not(.disabled):active, .btn-primary:not(:disabled):not(.disabled).active,
+.show > .btn-primary.dropdown-toggle {
+  color: #fff;
+  background-color: #232512;
+  border-color: #232512;
+}
+.btn-primary:not(:disabled):not(.disabled):active:focus, .btn-primary:not(:disabled):not(.disabled).active:focus,
+.show > .btn-primary.dropdown-toggle:focus {
+  box-shadow: 0 0 0 0.2rem #000000;
+}
+.card-title{
+    color: #fff;
+    background-color: rgb(143, 123, 110);
+}
+
+#lugar, #hora, #temperatura, #Humedad, #Estado, #la{
+    text-align: center;
+    color: #fff;
+}
+.galeria{
+    width: 300px;
+    height: 200px;
+    margin-bottom: 30px;
+}

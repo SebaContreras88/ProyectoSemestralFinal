@@ -1,0 +1,40 @@
+{% load static %}
+{% load bootstrap4 %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inicio Sesion GrupoCero</title>
+    {% bootstrap_css %}
+    <link rel="stylesheet" href="{% static 'core/css/bootstrap.css' %}">
+    <link rel="stylesheet" href="{% static 'core/css/iniciosesionestilos.css' %}">
+    <script src="{% static 'core/js/jquery-3.6.0.js' %}"></script>
+    <script src="{% static 'core/js/script.js' %}"></script>
+</head>
+<body>
+  <div class="container">
+    <div class="row">
+      <div class="col"> <form action ="" id="form1" method="POST">
+        <h1>Iniciar Sesión GrupoCero</h1>
+          <br><br>
+      <label for="txt1">Correo Electronico: </label>
+      <input type="text" name="txt1" id="txt1" placeholder="Ingrese su Correo">
+      <span id="error1" class="error"></span>
+
+      <br><br>
+    
+      <label for="txt2">Contraseña: </label>
+      <input type="password" name="txt2" id="txt2" placeholder="Ingrese su Contraseña">
+      <span id="error2" class="error"></span>
+      
+      <br><br>
+  
+      <button id="btn1">Iniciar Sesión</button>
+      <a href="{% url 'index' %}"><input type="button" value="Volver a página principal"></a></div>
+    </div>
+  </div>
+
+</body>
+</html>

@@ -1,0 +1,70 @@
+{% load static %}
+{% load bootstrap4 %}
+{% bootstrap_css %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pinturas</title>
+    <link rel="stylesheet" href="{% static 'core/css/bootstrap.css' %}">
+    <link rel="stylesheet" href="{% static 'core/css/pinturas.css' %}">
+</head>
+<body>
+
+    <a id="btnvolver" href="{% url 'index' %}"><input type="button" value="← Volver a la pagina principal"></a>
+    
+    
+    <div class="row">
+        <div class="col">
+            <div class="jumbotron">
+                <hr class="my-4">
+                <h1 class="titulo">Pinturas</h1>
+                <p class="m-0 row justify-content-center">Pinturas Clasicas</p>
+                <hr class="my-4">
+                <form class="d-flex">
+                  </form>
+                </div>
+                <div class="row">
+                    <div class="col"></div>
+                    <div id="nocheestrellada" class="carousel slide" data-ride="carousel">
+                        <div class="carousel-inner">
+                          <div class="carousel-item active">
+                              <img src="{% static 'core/img/Pintura2.jpg' %}" class="galeria" alt="...">
+                            <div class="card-boy">
+                                <h5 class="card-title">La Noche Estrellada</h5>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                                <p>cumque delectus suscipit dolore cupidit dolore nostrum!</p>
+                            </div>
+                          </div>
+                        </div>
+                    </div>
+                    
+                      <div class="col"></div>
+                    <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
+                        <div class="carousel-inner">
+                          <div class="carousel-item active">
+                              <img src="{% static 'core/img/pintura4.png' %}" class="galeria" alt="...">
+                              <div class="card-boy">
+                                <h5 class="card-title">Mona Lisa</h5>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                                <p>cumque delectus suscipit dolore cupidit dolore nostrum!</p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+        
+                    <div class="col"></div>
+                    <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
+                        <div class="carousel-inner">
+                          <div class="carousel-item active">
+                              <img src="{% static 'core/img/pinturagrito.jpg' %}" class="galeria" alt="...">
+                              <div class="card-boy">
+                                <h5 class="card-title">El Grito</h5>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                                <p>cumque delectus suscipit dolore cupidit dolore nostrum!</p>
+                            </div>
+    
+</body>
+</html>

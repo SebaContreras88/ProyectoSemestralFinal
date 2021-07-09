@@ -1,0 +1,35 @@
+{% load static %}
+{% load bootstrap4 %}
+{% load crispy_forms_tags %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agregar Arte</title>
+    {% bootstrap_css %}
+    <link rel="stylesheet" href="{% static 'core/css/bootstrap.css' %}">
+    <link rel="stylesheet" href="{% static 'core/css/nuevaArte.css' %}">
+</head>
+<a href="{% url 'listaArtes' %}"><input type="button" value="← Volver a lista de artes"></a>
+<body>
+    <h1 id="titulo">Agregar Arte</h1>
+    <div class="container">
+        <div class="row">
+            <div class="col"></div>
+            <div class="col">
+                <form action="" method="POST" id="formulario">
+                    {% csrf_token %}
+                    {{ form|crispy }}
+            
+                    <button type="submit">Guardar Arte</button>
+                </form>
+            
+                <span style="color:rgb(2, 2, 250)">{{ mensaje }} </span>
+            </div>
+            <div class="col"></div>
+        </div>
+    </div>
+</body>
+</html>

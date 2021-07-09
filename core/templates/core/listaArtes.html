@@ -1,0 +1,44 @@
+{% load static %}
+{% load bootstrap4 %}
+{% load crispy_forms_tags %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de Artes</title>
+    {% bootstrap_css %}
+    <link rel="stylesheet" href="{% static 'core/css/bootstrap.css' %}">
+    <link rel="stylesheet" href="{% static 'core/css/listaArtes.css' %}">
+</head>
+<a href="{% url 'index' %}"><input type="button" value="← Volver a página principal"></a>
+<body>
+    <h1 id="titulo">Lista Artes</h1>
+    <a class="nav-link" href="{% url 'nuevaArte' %}">Agregar Arte</a>
+    <hr>
+    <table class="table table-striped table-dark">
+        <tr>
+            <td>Numarticulo</td>
+            <td>Nombre</td>
+            <td>Precio</td>
+            <td>Autor</td>
+            <td>Categoria</td>
+            <td>Acciones</td>
+        </tr>
+        {% for a in artes %}
+        <tr>
+            <td>{{ a.numarticulo }}</td>
+            <td>{{ a.nombre }}</td>
+            <td>{{ a.precio }}</td>
+            <td>{{ a.autor }}</td>
+            <td>{{ a.categoria }}</td>
+            <td>
+                <a href="{% url 'editarArte' a.numarticulo %}">Editar</a>
+                <a href="{% url 'eliminarArte' a.numarticulo %}">Borrar</a>
+            </td>
+        </tr>
+        {% endfor %}
+    </table>
+</body>
+</html>

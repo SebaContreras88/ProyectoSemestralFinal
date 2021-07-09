@@ -1,0 +1,48 @@
+{% load static %}
+{% load bootstrap4 %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro GrupoCero</title>
+    {% bootstrap_css %}
+    <link rel="stylesheet" href="{% static 'core/css/bootstrap.css' %}">
+    <link rel="stylesheet" href="{% static 'core/css/registrarseestilos.css' %}">
+    <script src="{% static 'core/js/jquery-3.6.0.js' %}"></script>
+    <script src="{% static 'core/js/script2.js' %}"></script>
+</head>
+<body>
+  <div class="container">
+    <div class="row">
+      <div class="col"><form action ="" id="form2" method="POST">
+        <h1>Registro GrupoCero</h1>
+          <br><br>
+<label for="text1">Nombre: </label>
+<input type="text" name="text1" id="text1" placeholder="Ingrese su nombre">
+<span id="error_1" class="error"></span>
+<br><br>
+<label for="text2">Apellido: </label>
+<input type="text2" name="text2" id="text2" placeholder="Ingrese su apellido">
+<span id="error_2" class="error"></span>
+      
+<br><br>
+  
+<label for="text3">Correo Electronico: </label>
+<input type="text" name="text3" id="text3" placeholder="ejemplo@gmail.com">
+<span id="error_3" class="error"></span>
+      <br><br>
+  
+      <label for="text4">Contraseña: </label>
+<input type="text" name="text4" id="text4" placeholder="Ingrese su contraseña">
+<span id="error_4" class="error"></span>
+<br><br>
+<button id="btn2">Registrar</button>
+<a href="{% url 'index' %}"><input type="button" value="Volver a página principal"></a>
+      </div>
+    </div>
+  </div>
+    
+</body>
+</html>
